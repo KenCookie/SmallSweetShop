@@ -1,0 +1,10 @@
+<ul>
+  <li><a [routerLink]="path.home">Home</a></li>
+  <li><a [routerLink]="path.login">Login</a></li>
+  <li><a [routerLink]="[path.products, 'all']">Products</a></li> 
+  <li><a [routerLink]="path.cart">Cart</a></li>
+  <li><a [routerLink]="path.checkout">Checkout</a></li>
+  <li><a [routerLink]="path.success">Success</a></li>
+</ul>
+
+<router-outlet></router-outlet>
