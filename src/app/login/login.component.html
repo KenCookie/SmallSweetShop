@@ -1,205 +1,78 @@
 <!-- <p>login works!</p> -->
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sweetaste</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <link rel="stylesheet" href="../assets/css/login.css">
-</head>
+<div class="container">
 
-<body>
+    <!-- 登入區域開始 -->
+    <article class="bg-dark-green">
 
-    <!-- 導覽列區域開始 -->
-    <header class="font-dark-green">
+        <h2 class="font-light-green">會員登入</h2>
 
-        <!-- Logo 區域開始 -->
-        <a href="../index.html" class="desktop">
-            <img src="../assets/images/logo/logo-all-dark.svg" alt="Sweetaste 的 Logo">
-        </a>
-
-        <a href="../index.html" class="mobile">
-            <img src="../assets/images/logo/logotype.svg" alt="Sweetaste 的 Logo">
-        </a>
-        <!-- Logo 區域結束 -->
-
-        <!-- 選單區域開始 -->
-        <nav class="desktop">
+        <div class="mobile bg-light-green shell">
             <ul>
-                <li><a href="../index.html">首頁</a></li>
-                <li><a href="product.html">甜點</a></li>
-                <li><a href="javascript:;">登入</a></li>
+                <li>
+                    <a href="javascript:;"><img src="/assets/images/icon/ic-facebook-logotype.svg" alt="使用 Facebook 登入的按鈕圖片"></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="/assets/images/icon/ic-google.svg" alt="使用 Google 登入的按鈕圖片"></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="/assets/images/icon/ic-yahoo.svg" alt="使用 yahoo 登入的按鈕圖片"></a>
+                </li>
             </ul>
-        </nav>
-
-        <nav class="mobile">
-            <i class="material-icons">menu</i>
-            <ul>
-                <li><a href="../index.html">首頁</a></li>
-                <li><a href="product.html">甜點</a></li>
-                <li><a href="javascript:;">登入</a></li>
-            </ul>
-        </nav>
-        <!-- 選單區域結束 -->
-
-        <!-- 購物車icon區域開始 -->
-        <a href="cart.html" class="cart">
-            <i class="material-icons">shopping_cart</i>
-        </a>
-        <!-- 購物車icon區域結束 -->
-
-    </header>
-    <!-- 導覽列區域結束 -->
-
-    <div class="container">
-
-        <!-- 登入區域開始 -->
-        <article class="bg-dark-green">
-
-            <h2 class="font-light-green">會員登入</h2>
-
-            <div class="mobile bg-light-green shell">
-                <ul>
-                    <li>
-                        <a href="javascript:;"><img src="../assets/images/icon/ic-facebook-logotype.svg" alt="使用 Facebook 登入的按鈕圖片"></a>
-                    </li>
-                    <li>
-                        <a href="javascript:;"><img src="../assets/images/icon/ic-google.svg" alt="使用 Google 登入的按鈕圖片"></a>
-                    </li>
-                    <li>
-                        <a href="javascript:;"><img src="../assets/images/icon/ic-yahoo.svg" alt="使用 yahoo 登入的按鈕圖片"></a>
-                    </li>
-                </ul>
-            </div>
-
-            <form>
-
-                <p class="bg-light-green font-dark-green input-area">
-                    <label for="account">
-            <i class="material-icons">person</i>
-            <input type="text" placeholder="電子信箱/手機號碼" name="account" id="account">
-          </label>
-                </p>
-
-                <p class="bg-light-green font-dark-green input-area">
-                    <label for="password">
-            <i class="material-icons">vpn_key</i>
-            <input type="text" placeholder="請輸入使用者密碼" name="password" id="password">
-          </label>
-                </p>
-
-                <p class="font-light-green">
-                    <input class="bg-light-green" type="checkbox" name="remeber" id="remeber">
-                    <label for="remeber">記住我</label>
-                </p>
-
-                <p>
-                    <button class="font-dark-green" type="submit">登入帳號</button>
-                </p>
-
-            </form>
-
-        </article>
-        <!-- 登入區域結束 -->
-
-        <!-- 連結社群帳號開始 -->
-        <aside class="desktop">
-
-            <div class="shell bg-light-green">
-
-                <h2>—— 連結社群帳號 ——</h2>
-
-                <ul>
-                    <li>
-                        <a href="javascript:;"><img src="../assets/images/icon/ic-facebook-logotype.svg" alt="使用 Facebook 登入的按鈕圖片"></a>
-                    </li>
-                    <li>
-                        <a href="javascript:;"><img src="../assets/images/icon/ic-google.svg" alt="使用 Google 登入的按鈕圖片"></a>
-                    </li>
-                    <li>
-                        <a href="javascript:;"><img src="../assets/images/icon/ic-yahoo.svg" alt="使用 yahoo 登入的按鈕圖片"></a>
-                    </li>
-                </ul>
-
-            </div>
-
-        </aside>
-        <!-- 連結社群帳號結束 -->
-
-    </div>
-
-    <!-- 頁尾區域開始 -->
-    <footer>
-
-        <!-- 訂閱區域開始 -->
-        <div class="subscription bg-dark-green font-light-green">
-
-            <!-- Logo 區域開始 -->
-            <img class="logo desktop" src="../assets/images/logo/logo-light.svg" alt="Sweetaste 的 Logo">
-
-            <h3><img class="logo mobile" src="../assets/images/logo/logo-light.svg" alt="Sweetaste 的 Logo">訂閱你我的甜蜜郵件</h3>
-            <!-- Logo 區域結束 -->
-
-            <!-- 輸入區域開始 -->
-            <div class="input-area">
-
-                <form class="bg-light-green">
-
-                    <label for="email">
-            <i class="material-icons">email</i>
-          </label>
-
-                    <input type="email" name="email" id="email">
-
-                    <button type="submit">
-            <i class="material-icons">arrow_forward</i>
-          </button>
-
-                </form>
-
-            </div>
-            <!-- 輸入區域結束 -->
-
         </div>
-        <!-- 訂閱區域結束 -->
 
-        <div class="contact-info bg-light-green font-dark-green">
+        <form>
 
-            <img class="logo" src="../assets/images/logo/logotype-lg-dark.svg" alt="Sweetaste 的 Logo">
+            <p class="bg-light-green font-dark-green input-area">
+                <label for="account">
+                    <i class="material-icons">person</i>
+                    <input type="text" placeholder="電子信箱/手機號碼" name="account" id="account">
+                </label>
+            </p>
 
-            <img class="slogan" src="../assets/images/logo/sm-今天是個吃甜點的好日子.svg" alt="Sweetaste - 今天是個吃甜點的好日子">
+            <p class="bg-light-green font-dark-green input-area">
+                <label for="password">
+                    <i class="material-icons">vpn_key</i>
+                    <input type="text" placeholder="請輸入使用者密碼" name="password" id="password">
+                </label>
+            </p>
 
-            <div class="info">
-                <p>07-1234-5678</p>
-                <p>sweetaste@email.com</p>
-                <p>800 高雄市新興區幸福路 520 號</p>
-            </div>
+            <p class="font-light-green">
+                <input class="bg-light-green" type="checkbox" name="remeber" id="remeber">
+                <label for="remeber">記住我</label>
+            </p>
 
-            <div class="icon">
+            <p>
+                <button class="font-dark-green" type="submit">登入帳號</button>
+            </p>
 
-                <a href="javascript:;">
-                    <img src="../assets/images/icon/ic-line@.svg" alt="連結到官方 Line@ 帳號的icon">
-                </a>
+        </form>
 
-                <a href="javascript:;">
-                    <img src="../assets/images/icon/ic-facebook.svg" alt="連結到官方 Facebook 帳號的icon">
-                </a>
+    </article>
+    <!-- 登入區域結束 -->
 
-            </div>
+    <!-- 連結社群帳號開始 -->
+    <aside class="desktop">
 
-            <div class="copy-right">
-                &copy; 2018 Sweetaste* All Rights Reserved
-            </div>
+        <div class="shell bg-light-green">
+
+            <h2>—— 連結社群帳號 ——</h2>
+
+            <ul>
+                <li>
+                    <a href="javascript:;"><img src="/assets/images/icon/ic-facebook-logotype.svg" alt="使用 Facebook 登入的按鈕圖片"></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="/assets/images/icon/ic-google.svg" alt="使用 Google 登入的按鈕圖片"></a>
+                </li>
+                <li>
+                    <a href="javascript:;"><img src="/assets/images/icon/ic-yahoo.svg" alt="使用 yahoo 登入的按鈕圖片"></a>
+                </li>
+            </ul>
 
         </div>
 
-    </footer>
-    <!-- 頁尾區域結束 -->
+    </aside>
+    <!-- 連結社群帳號結束 -->
 
-</body>
-
-</html>
+</div>

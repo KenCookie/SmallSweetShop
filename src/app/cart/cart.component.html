@@ -1,213 +1,87 @@
 <!-- <p>cart works!</p> -->
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sweetaste</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <link rel="stylesheet" href="../assets/css/cart.css">
-</head>
 
-<body>
+<div class="container">
 
-    <!-- 導覽列區域開始 -->
-    <header class="font-dark-green">
+    <!-- 購物車區域開始 -->
+    <article class="font-dark-green">
 
-        <!-- Logo 區域開始 -->
-        <a href="../index.html" class="desktop">
-            <img src="../assets/images/logo/logo-all-dark.svg" alt="Sweetaste 的 Logo">
-        </a>
+        <h2 class="bg-light-green">您的購物車</h2>
 
-        <a href="../index.html" class="mobile">
-            <img src="../assets/images/logo/logotype.svg" alt="Sweetaste 的 Logo">
-        </a>
-        <!-- Logo 區域結束 -->
+        <div class="cart-list">
 
-        <!-- 選單區域開始 -->
-        <nav class="desktop">
-            <ul>
-                <li><a href="../index.html">首頁</a></li>
-                <li><a href="product.html">甜點</a></li>
-                <li><a href="login.html">登入</a></li>
-            </ul>
-        </nav>
+            <div class="cart-item">
 
-        <nav class="mobile">
-            <i class="material-icons">menu</i>
-            <ul>
-                <li><a href="../index.html">首頁</a></li>
-                <li><a href="product.html">甜點</a></li>
-                <li><a href="login.html">登入</a></li>
-            </ul>
-        </nav>
-        <!-- 選單區域結束 -->
+                <p class="img"></p>
 
-        <!-- 購物車icon區域開始 -->
-        <a href="javascript:;" class="cart">
-            <i class="material-icons">shopping_cart</i>
-        </a>
-        <!-- 購物車icon區域結束 -->
+                <div class="description">
 
-    </header>
-    <!-- 導覽列區域結束 -->
-
-    <div class="container">
-
-        <!-- 購物車區域開始 -->
-        <article class="font-dark-green">
-
-            <h2 class="bg-light-green">您的購物車</h2>
-
-            <div class="cart-list">
-
-                <div class="cart-item">
-
-                    <p class="img"></p>
-
-                    <div class="description">
-
-                        <div class="content">
-                            <p>焦糖馬卡龍</p>
-                            <p>NT$ 450</p>
-                        </div>
-
+                    <div class="content">
+                        <p>焦糖馬卡龍</p>
+                        <p>NT$ 450</p>
                     </div>
-                    <p><span>-</span><span>2</span><span>+</span></p>
-                    <p>NT$ 900</p>
-                    <p class="desktop"><i class="material-icons">delete_outline</i></p>
 
                 </div>
+                <p><span>-</span><span>2</span><span>+</span></p>
+                <p>NT$ 900</p>
+                <p class="desktop"><i class="material-icons">delete_outline</i></p>
 
-                <div class="cart-item">
+            </div>
 
-                    <p class="img"></p>
+            <div class="cart-item">
 
-                    <div class="description">
+                <p class="img"></p>
 
-                        <div class="content">
-                            <p>焦糖馬卡龍</p>
-                            <p>NT$ 450</p>
-                        </div>
+                <div class="description">
 
+                    <div class="content">
+                        <p>焦糖馬卡龍</p>
+                        <p>NT$ 450</p>
                     </div>
-                    <p><span>-</span><span>2</span><span>+</span></p>
-                    <p>NT$ 900</p>
-                    <p class="desktop"><i class="material-icons">delete_outline</i></p>
 
                 </div>
+                <p><span>-</span><span>2</span><span>+</span></p>
+                <p>NT$ 900</p>
+                <p class="desktop"><i class="material-icons">delete_outline</i></p>
 
-                <div class="cart-item">
+            </div>
 
-                    <p class="img"></p>
+            <div class="cart-item">
 
-                    <div class="description">
+                <p class="img"></p>
 
-                        <div class="content">
-                            <p>焦糖馬卡龍</p>
-                            <p>NT$ 450</p>
-                        </div>
+                <div class="description">
 
+                    <div class="content">
+                        <p>焦糖馬卡龍</p>
+                        <p>NT$ 450</p>
                     </div>
-                    <p><span>-</span><span>2</span><span>+</span></p>
-                    <p>NT$ 900</p>
-                    <p class="desktop"><i class="material-icons">delete_outline</i></p>
 
                 </div>
+                <p><span>-</span><span>2</span><span>+</span></p>
+                <p>NT$ 900</p>
+                <p class="desktop"><i class="material-icons">delete_outline</i></p>
 
-            </div>
-
-        </article>
-        <!-- 購物車區域結束 -->
-
-        <!-- 訂單摘要區域開始 -->
-        <aside class="bg-dark-green font-light-green">
-
-            <h2>訂單摘要</h2>
-
-            <p>小計<span>NT$ 2,700</span></p>
-            <p>運費<span>NT$ 300</span></p>
-
-            <p class="total">總計<span>NT$ 3,000</span></p>
-
-            <p class="checkout font-dark-green"><a href="checkout-1.html">結帳</a></p>
-
-        </aside>
-        <!-- 訂單摘要區域結束 -->
-
-    </div>
-
-    <!-- 頁尾區域開始 -->
-    <footer>
-
-        <!-- 訂閱區域開始 -->
-        <div class="subscription bg-dark-green font-light-green">
-
-            <!-- Logo 區域開始 -->
-            <img class="logo desktop" src="../assets/images/logo/logo-light.svg" alt="Sweetaste 的 Logo">
-
-            <h3><img class="logo mobile" src="../assets/images/logo/logo-light.svg" alt="Sweetaste 的 Logo">訂閱你我的甜蜜郵件</h3>
-            <!-- Logo 區域結束 -->
-
-            <!-- 輸入區域開始 -->
-            <div class="input-area">
-
-                <form class="bg-light-green">
-
-                    <label for="email">
-            <i class="material-icons">email</i>
-          </label>
-
-                    <input type="email" name="email" id="email">
-
-                    <button type="submit">
-            <i class="material-icons">arrow_forward</i>
-          </button>
-
-                </form>
-
-            </div>
-            <!-- 輸入區域結束 -->
-
-        </div>
-        <!-- 訂閱區域結束 -->
-
-        <div class="contact-info bg-light-green font-dark-green">
-
-            <img class="logo" src="../assets/images/logo/logotype-lg-dark.svg" alt="Sweetaste 的 Logo">
-
-            <img class="slogan" src="../assets/images/logo/sm-今天是個吃甜點的好日子.svg" alt="Sweetaste - 今天是個吃甜點的好日子">
-
-            <div class="info">
-                <p>07-1234-5678</p>
-                <p>sweetaste@email.com</p>
-                <p>800 高雄市新興區幸福路 520 號</p>
-            </div>
-
-            <div class="icon">
-
-                <a href="javascript:;">
-                    <img src="../assets/images/icon/ic-line@.svg" alt="連結到官方 Line@ 帳號的icon">
-                </a>
-
-                <a href="javascript:;">
-                    <img src="../assets/images/icon/ic-facebook.svg" alt="連結到官方 Facebook 帳號的icon">
-                </a>
-
-            </div>
-
-            <div class="copy-right">
-                &copy; 2018 Sweetaste* All Rights Reserved
             </div>
 
         </div>
 
-    </footer>
-    <!-- 頁尾區域結束 -->
+    </article>
+    <!-- 購物車區域結束 -->
 
-</body>
+    <!-- 訂單摘要區域開始 -->
+    <aside class="bg-dark-green font-light-green">
 
-</html>
+        <h2>訂單摘要</h2>
+
+        <p>小計<span>NT$ 2,700</span></p>
+        <p>運費<span>NT$ 300</span></p>
+
+        <p class="total">總計<span>NT$ 3,000</span></p>
+
+        <p class="checkout font-dark-green"><a href="checkout-1.html">結帳</a></p>
+
+    </aside>
+    <!-- 訂單摘要區域結束 -->
+
+</div>
