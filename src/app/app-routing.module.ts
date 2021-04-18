@@ -27,7 +27,7 @@ const routes: Routes = [
     loadChildren: () => import('./checkout/checkout.module').then(m => m.CheckoutModule)
   },
   {
-    path: appPath.success,
+    path: appPath.success,//'success'
     loadChildren: () => import('./success/success.module').then(m => m.SuccessModule)
   },
   {
