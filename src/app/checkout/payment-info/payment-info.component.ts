@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { appPath } from 'src/app/app-path.const';
 
 @Component({
   selector: 'app-payment-info',
@@ -12,4 +13,5 @@ export class PaymentInfoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  path=appPath;
 }

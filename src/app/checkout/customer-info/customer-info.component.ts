@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { appPath } from '../../app-path.const';
 
 @Component({
   selector: 'app-customer-info',
@@ -12,4 +13,5 @@ export class CustomerInfoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  path = appPath;
 }
