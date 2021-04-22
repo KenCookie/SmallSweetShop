@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { appPath } from '../app-path.const';
 
 @Component({
   selector: 'app-cart',
@@ -11,5 +12,5 @@ export class CartComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  path = appPath;
 }
