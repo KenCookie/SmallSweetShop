@@ -21,6 +21,12 @@
     background-position: center center;
 }
 
+.img {
+    height: 315px;
+    width: 300px;
+    object-fit: cover;
+}
+
 .choice-item .description {
     height: 56px;
 }
