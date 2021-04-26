@@ -13,10 +13,10 @@
     <aside>
         <h3 class="bg-dark-green font-light-green">甜點類別</h3>
         <ul class="font-dark-green">
-            <li>所有甜點（48）</li>
-            <li>本日精選（10）</li>
-            <li>人氣推薦（26）</li>
-            <li>新品上市（12）</li>
+            <li>所有甜點（{{allcount}}）</li>
+            <li>本日精選（{{count('today')}}）</li>
+            <li>人氣推薦（{{count('popular')}}）</li>
+            <li>新品上市（{{count('new')}}）</li>
         </ul>
     </aside>
     <!-- 甜點類別區域結束 -->
@@ -28,7 +28,6 @@
 
             <!-- <router-outlet></router-outlet> -->
             <app-product-list></app-product-list>
-            <!-- <app-product-list *ngFor="let item of [1, 2, 3, 4]"></app-product-list> -->
 
         </div>
 

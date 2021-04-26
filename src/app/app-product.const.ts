@@ -15,21 +15,21 @@ export const products = [
     },
     {
       id:3,
-      type: 'new',
+      type: 'popular',
       name: '提拉米蘇',
       price: 350,
       img: "/assets/images/others/03_Tiramisu.jpg"
     },
     {
       id:4,
-      type: 'new',
+      type: 'today',
       name: '奇異果藍莓優格',
       price: 350,
       img: "/assets/images/others/04_KiwiBlueberryYogurt.jpg"
     },
     {
       id:5,
-      type: 'new',
+      type: 'popular',
       name: '巧克力粉蛋糕',
       price: 350,
       img: "/assets/images/others/05_ChocolateFlourCake.jpg"
@@ -43,7 +43,7 @@ export const products = [
     },
     {
       id:7,
-      type: 'new',
+      type: 'popular',
       name: '莓果派',
       price: 350,
       img: "/assets/images/others/07_BerryPie.jpg"
@@ -57,7 +57,7 @@ export const products = [
     },
     {
       id:9,
-      type: 'new',
+      type: 'today',
       name: '咖啡馬卡龍',
       price: 350,
       img: "/assets/images/others/09_CoffeeMacarons.jpg"
@@ -71,7 +71,7 @@ export const products = [
     },
     {
       id:11,
-      type: 'today',
+      type: 'popular',
       name: '牛奶糖衣甜甜圈',
       price: 450,
       img: "/assets/images/others/11_Milkicingdonuts.jpg"
@@ -85,7 +85,7 @@ export const products = [
     },
     {
       id:13,
-      type: 'new',
+      type: 'popular',
       name: '百香梅果奶酪',
       price: 350,
       img: "/assets/images/others/13_PassionPlumCheese.jpg"
@@ -106,28 +106,28 @@ export const products = [
     },
     {
       id:16,
-      type: 'new',
+      type: 'popular',
       name: '櫻桃玫瑰甜筒',
       price: 350,
       img: "/assets/images/others/16_Cherryrosecone.jpg"
     },
     {
       id:17,
-      type: 'new',
+      type: 'today',
       name: '莓果奶油蛋糕',
       price: 350,
       img: "/assets/images/others/17_BerryCreamCake.jpg"
     },
     {
       id:18,
-      type: 'new',
+      type: 'popular',
       name: '咖啡冰棒',
       price: 350,
       img: "/assets/images/others/18_Coffeepopsicle.jpg"
     },
     {
       id:19,
-      type: 'new',
+      type: 'popular',
       name: '果實冰棒',
       price: 350,
       img: "/assets/images/others/19_Fruitpopsicle.jpg"
@@ -141,7 +141,7 @@ export const products = [
     },
     {
       id:21,
-      type: 'new',
+      type: 'today',
       name: '棉花糖瑪奇朵',
       price: 350,
       img: "/assets/images/others/21_MarshmallowMacchiato.jpg"
