@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { products } from 'src/app/app-product.const';
+import { SweetTypeService } from 'src/app/sweet-type.service';
 
 @Component({
   selector: 'app-product-item',
@@ -8,12 +9,13 @@ import { products } from 'src/app/app-product.const';
 })
 export class ProductItemComponent implements OnInit {
 
-  constructor() { }
+  constructor(private sweettypeservice: SweetTypeService) { }
 
   ngOnInit(): void {
   }
 
-  product = products;
+  // product = products;
+  product = this.sweettypeservice.getsweetType();
 
   chineseType(type: string) {
     if (type == 'today') return '本日精選';
@@ -21,4 +23,8 @@ export class ProductItemComponent implements OnInit {
     else return '新品上市';
   }
   
+  // getsweetType(choisetype: string){
+  //   console.log(products.filter(Type => Type.type == choisetype));
+  //   return products.filter(Type => Type.type == choisetype);
+  // }
 }

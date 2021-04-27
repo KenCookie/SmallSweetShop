@@ -88,7 +88,8 @@
     margin-right: 20px;
 }
 
-.choice-item:first-child .img-container {
+
+/* .choice-item:first-child .img-container {
     background-image: url(/assets/images/others/brenda-godinez-228182-unsplash.jpg);
 }
 
@@ -110,7 +111,7 @@
 
 .choice-item:last-child .img-container {
     background-image: url(/assets/images/others/food-photographer-jennifer-pallian-306895-unsplash.jpg);
-}
+} */
 
 
 /* .choice-item {

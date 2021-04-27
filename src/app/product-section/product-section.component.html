@@ -13,10 +13,12 @@
     <aside>
         <h3 class="bg-dark-green font-light-green">甜點類別</h3>
         <ul class="font-dark-green">
-            <li>所有甜點（{{allcount}}）</li>
-            <li>本日精選（{{count('today')}}）</li>
-            <li>人氣推薦（{{count('popular')}}）</li>
-            <li>新品上市（{{count('new')}}）</li>
+
+            <li (click)="getList('all')">所有甜點（{{allcount}}）</li>
+            <li (click)="getList('today')">本日精選（{{count('today')}}）</li>
+            <li (click)="getList('popular')"> 人氣推薦（{{count('popular')}}）</li>
+            <li (click)="getList('new')">新品上市（{{count('new')}}）</li>
+
         </ul>
     </aside>
     <!-- 甜點類別區域結束 -->
