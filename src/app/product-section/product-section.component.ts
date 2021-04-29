@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { element } from 'protractor';
 import { products } from '../app-product.const';
 import { SweetTypeService } from '../sweet-type.service';
-import { producttype } from './product-type.enum';
+import { choosetype } from './product-type.enum';
 
 @Component({
   selector: 'app-product-section',
@@ -16,7 +15,41 @@ export class ProductSectionComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  product = this.sweettypeservice.getsweetType.length;
+  ProductType = choosetype;
+  //目前狀態
+
+  // 給 Template 用的寄送方式列舉
+  CTP = choosetype;
+  // 當前的類型選擇，預設使用 All
+  private selectedType = choosetype.All;
+  // 切換寄送類型
+  getTypeList(clicktype: number): [] {
+    let list;
+    this.selectedType = clicktype;
+    switch (this.selectedType) {
+      case choosetype.Today:
+        list = this.sweettypeservice.setsweetType('today');
+        break;
+      case choosetype.Popular:
+        list = this.sweettypeservice.setsweetType('popular');
+        break;
+      case choosetype.New:
+        list = this.sweettypeservice.setsweetType('new');
+        break;
+      default:
+        list = this.sweettypeservice.setsweetType('all');
+        break;
+    }
+    return list;
+  }
+
+  // switch(type: number): void {
+  //   this.selectedType = type;
+  // }
+  // 傳入的類型是否為當前所選擇的類型
+  didSelected(type: number): boolean {
+    return this.selectedType === type;
+  }
 
   // ProductType = producttype;
   //目前狀態
@@ -44,6 +77,8 @@ export class ProductSectionComponent implements OnInit {
   //   }
   //   return list;
   // }
+
+  // product = this.sweettypeservice.getsweetType.length;
 
   getList(choosetype: string): [] {
     let list;
@@ -78,6 +113,4 @@ export class ProductSectionComponent implements OnInit {
     }, this)
     return cc;
   }
-
-
 }

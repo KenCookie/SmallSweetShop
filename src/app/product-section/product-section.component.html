@@ -14,10 +14,23 @@
         <h3 class="bg-dark-green font-light-green">甜點類別</h3>
         <ul class="font-dark-green">
 
-            <li (click)="getList('all')">所有甜點（{{allcount}}）</li>
+            <!-- <li (click)="getList('all')">所有甜點（{{allcount}}）</li>
             <li (click)="getList('today')">本日精選（{{count('today')}}）</li>
-            <li (click)="getList('popular')"> 人氣推薦（{{count('popular')}}）</li>
-            <li (click)="getList('new')">新品上市（{{count('new')}}）</li>
+            <li (click)="getList('popular')"> 人氣推薦（{{count('popular')}}）</li> -->
+            <!-- <li (click)="getList('new')">新品上市（{{count('new')}}）</li> -->
+
+            <li>
+                <a href="javascript:;" [class.selected]="didSelected(ProductType.All)" (click)="getTypeList(ProductType.All)">所有甜點（{{allcount}}） </a>
+            </li>
+            <li>
+                <a href="javascript:;" [class.selected]="didSelected(ProductType.Today)" (click)="getTypeList(ProductType.Today)">本日精選（{{count('today')}}） </a>
+            </li>
+            <li>
+                <a href="javascript:;" [class.selected]="didSelected(ProductType.Popular)" (click)="getTypeList(ProductType.Popular)">人氣推薦（{{count('popular')}}） </a>
+            </li>
+            <li>
+                <a href="javascript:;" [class.selected]="didSelected(ProductType.New)" (click)="getTypeList(ProductType.New)">新品上市（{{count('new')}}） </a>
+            </li>
 
         </ul>
     </aside>
@@ -29,7 +42,23 @@
         <div class="item-list">
 
             <!-- <router-outlet></router-outlet> -->
-            <app-product-list></app-product-list>
+            <!-- <app-product-list></app-product-list> -->
+            <!-- <app-product-item></app-product-item> -->
+            <ng-container *ngIf="didSelected(ProductType.All); else CToday">
+                <app-product-list></app-product-list>
+            </ng-container>
+
+            <ng-template #CToday>
+                <app-product-list></app-product-list>
+            </ng-template>
+
+            <!-- <ng-template *ngIf="didSelected(ProductType.Popular); else CNew" #CPopular>
+                <app-product-list></app-product-list>
+            </ng-template>
+
+            <ng-template #CNew>
+                <app-product-list></app-product-list>
+            </ng-template> -->
 
         </div>
 
