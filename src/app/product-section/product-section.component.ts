@@ -15,14 +15,13 @@ export class ProductSectionComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  ProductType = choosetype;
   //目前狀態
 
   // 給 Template 用的寄送方式列舉
-  CTP = choosetype;
+  ProductType = choosetype;
   // 當前的類型選擇，預設使用 All
   private selectedType = choosetype.All;
-  // 切換寄送類型
+  // 切換類型
   getTypeList(clicktype: number): [] {
     let list;
     this.selectedType = clicktype;
@@ -43,10 +42,6 @@ export class ProductSectionComponent implements OnInit {
     return list;
   }
 
-  // switch(type: number): void {
-  //   this.selectedType = type;
-  // }
-  // 傳入的類型是否為當前所選擇的類型
   didSelected(type: number): boolean {
     return this.selectedType === type;
   }

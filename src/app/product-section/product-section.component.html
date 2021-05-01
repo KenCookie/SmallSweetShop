@@ -44,21 +44,21 @@
             <!-- <router-outlet></router-outlet> -->
             <!-- <app-product-list></app-product-list> -->
             <!-- <app-product-item></app-product-item> -->
-            <ng-container *ngIf="didSelected(ProductType.All); else CToday">
+            <ng-container *ngIf="didSelected(ProductType.All);">
                 <app-product-list></app-product-list>
             </ng-container>
 
-            <ng-template #CToday>
+            <ng-container *ngIf="didSelected(ProductType.Today);">
                 <app-product-list></app-product-list>
-            </ng-template>
+            </ng-container>
 
-            <!-- <ng-template *ngIf="didSelected(ProductType.Popular); else CNew" #CPopular>
+            <ng-container *ngIf="didSelected(ProductType.Popular);">
                 <app-product-list></app-product-list>
-            </ng-template>
+            </ng-container>
 
-            <ng-template #CNew>
+            <ng-container *ngIf="didSelected(ProductType.New);">
                 <app-product-list></app-product-list>
-            </ng-template> -->
+            </ng-container>
 
         </div>
 
