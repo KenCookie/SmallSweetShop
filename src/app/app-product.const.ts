@@ -24,63 +24,63 @@ export const products = [
       id:4,
       type: 'today',
       name: '奇異果藍莓優格',
-      price: 350,
+      price: 360,
       img: "/assets/images/others/04_KiwiBlueberryYogurt.jpg"
     },
     {
       id:5,
       type: 'popular',
       name: '巧克力粉蛋糕',
-      price: 350,
+      price: 250,
       img: "/assets/images/others/05_ChocolateFlourCake.jpg"
     },
     {
       id:6,
       type: 'new',
       name: '草莓蛋糕',
-      price: 350,
+      price: 375,
       img: "/assets/images/others/06_StrawberryCake.jpg"
     },
     {
       id:7,
       type: 'popular',
       name: '莓果派',
-      price: 350,
+      price: 325,
       img: "/assets/images/others/07_BerryPie.jpg"
     },
     {
       id:8,
       type: 'new',
       name: '草莓冰淇淋',
-      price: 350,
+      price: 150,
       img: "/assets/images/others/08_Strawberryicecream.jpg"
     },
     {
       id:9,
       type: 'today',
       name: '咖啡馬卡龍',
-      price: 350,
+      price: 250,
       img: "/assets/images/others/09_CoffeeMacarons.jpg"
     },
     {
       id:10,
       type: 'new',
       name: '白糖甜甜圈',
-      price: 350,
+      price: 150,
       img: "/assets/images/others/10_Sugardonuts.jpg"
     },
     {
       id:11,
       type: 'popular',
       name: '牛奶糖衣甜甜圈',
-      price: 450,
+      price: 175,
       img: "/assets/images/others/11_Milkicingdonuts.jpg"
     },
     {
       id:12,
       type: 'popular',
       name: '重乳酪甜甜圈',
-      price: 400,
+      price: 260,
       img: "/assets/images/others/12_Heavycheesedonuts.jpg"
     },
     {
@@ -94,7 +94,7 @@ export const products = [
       id:14,
       type: 'new',
       name: '條紋甜甜圈',
-      price: 350,
+      price: 199,
       img: "/assets/images/others/14_Stripeddonut.jpg"
     },
     {
@@ -108,7 +108,7 @@ export const products = [
       id:16,
       type: 'popular',
       name: '櫻桃玫瑰甜筒',
-      price: 350,
+      price: 450,
       img: "/assets/images/others/16_Cherryrosecone.jpg"
     },
     {
@@ -122,35 +122,35 @@ export const products = [
       id:18,
       type: 'popular',
       name: '咖啡冰棒',
-      price: 350,
+      price: 199,
       img: "/assets/images/others/18_Coffeepopsicle.jpg"
     },
     {
       id:19,
       type: 'popular',
       name: '果實冰棒',
-      price: 350,
+      price: 299,
       img: "/assets/images/others/19_Fruitpopsicle.jpg"
     },
     {
       id:20,
       type: 'new',
       name: '杏仁果鬆餅',
-      price: 350,
+      price: 400,
       img: "/assets/images/others/20_AlmondNutMuffins.jpg"
     },
     {
       id:21,
       type: 'today',
       name: '棉花糖瑪奇朵',
-      price: 350,
+      price: 520,
       img: "/assets/images/others/21_MarshmallowMacchiato.jpg"
     },
     {
       id:22,
       type: 'new',
       name: 'The_神秘糕點',
-      price: 350,
+      price: 999,
       img: "/assets/images/others/22_MysteryPastry.jpg"
     }
   ];

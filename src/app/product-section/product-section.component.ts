@@ -75,28 +75,28 @@ export class ProductSectionComponent implements OnInit {
 
   // product = this.sweettypeservice.getsweetType.length;
 
-  getList(choosetype: string): [] {
-    let list;
+  // getList(choosetype: string): [] {
+  //   let list;
 
-    switch (choosetype) {
-      case 'today':
-        list = this.sweettypeservice.setsweetType(choosetype);
-        break;
+  //   switch (choosetype) {
+  //     case 'today':
+  //       list = this.sweettypeservice.setsweetType(choosetype);
+  //       break;
 
-      case 'popular':
-        list = this.sweettypeservice.setsweetType(choosetype);
-        break;
+  //     case 'popular':
+  //       list = this.sweettypeservice.setsweetType(choosetype);
+  //       break;
 
-      case 'new':
-        list = this.sweettypeservice.setsweetType(choosetype);
-        break;
+  //     case 'new':
+  //       list = this.sweettypeservice.setsweetType(choosetype);
+  //       break;
 
-      default:
-        list = this.sweettypeservice.setsweetType(choosetype);
-        break;
-    }
-    return list;
-  }
+  //     default:
+  //       list = this.sweettypeservice.setsweetType(choosetype);
+  //       break;
+  //   }
+  //   return list;
+  // }
 
   allcount = products.length;
 
