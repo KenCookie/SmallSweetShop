@@ -16,7 +16,7 @@ export class ProductSectionComponent implements OnInit {
   }
 
   //目前狀態
-
+  listcount;
   // 給 Template 用的寄送方式列舉
   ProductType = choosetype;
   // 當前的類型選擇，預設使用 All
@@ -28,6 +28,8 @@ export class ProductSectionComponent implements OnInit {
     switch (this.selectedType) {
       case choosetype.Today:
         list = this.sweettypeservice.setsweetType('today');
+        this.listcount = list.length;
+        this.pagecount();
         break;
       case choosetype.Popular:
         list = this.sweettypeservice.setsweetType('popular');
@@ -44,6 +46,10 @@ export class ProductSectionComponent implements OnInit {
 
   didSelected(type: number): boolean {
     return this.selectedType === type;
+  }
+
+  pagecount(){
+    console.log(this.listcount);
   }
 
   // ProductType = producttype;

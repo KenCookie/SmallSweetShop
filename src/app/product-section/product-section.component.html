@@ -62,9 +62,7 @@
         <div class="pagination">
             <ul class="font-dark-green">
                 <li><i class="material-icons">arrow_left</i></li>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
+                <li *ngFor="count of [1,2,3]"><span>1</span></li>
                 <li><i class="material-icons">arrow_right</i></li>
             </ul>
         </div>
