@@ -20,7 +20,7 @@
             <!-- <li (click)="getList('new')">新品上市（{{count('new')}}）</li> -->
 
             <li>
-                <a href="javascript:;" [class.selected]="didSelected(ProductType.All)" (click)="getTypeList(ProductType.All)">所有甜點（{{allcount}}） </a>
+                <a href="javascript:;" [class.selected]="didSelected(ProductType.All)" (click)="getTypeList(ProductType.All)">所有甜點（{{listcount}}） </a>
             </li>
             <li>
                 <a href="javascript:;" [class.selected]="didSelected(ProductType.Today)" (click)="getTypeList(ProductType.Today)">本日精選（{{count('today')}}） </a>
@@ -62,7 +62,9 @@
         <div class="pagination">
             <ul class="font-dark-green">
                 <li><i class="material-icons">arrow_left</i></li>
-                <li *ngFor="count of [1,2,3]"><span>1</span></li>
+                <ng-container *ngIf="!pagecc.length">
+                    <li *ngFor="let count of pagecc"><span>{{count}}</span></li>
+                </ng-container>
                 <li><i class="material-icons">arrow_right</i></li>
             </ul>
         </div>

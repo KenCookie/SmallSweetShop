@@ -16,7 +16,6 @@ export class ProductSectionComponent implements OnInit {
   }
 
   //目前狀態
-  listcount;
   // 給 Template 用的寄送方式列舉
   ProductType = choosetype;
   // 當前的類型選擇，預設使用 All
@@ -28,17 +27,19 @@ export class ProductSectionComponent implements OnInit {
     switch (this.selectedType) {
       case choosetype.Today:
         list = this.sweettypeservice.setsweetType('today');
-        this.listcount = list.length;
         this.pagecount();
         break;
       case choosetype.Popular:
         list = this.sweettypeservice.setsweetType('popular');
+        this.pagecount();
         break;
       case choosetype.New:
         list = this.sweettypeservice.setsweetType('new');
+        this.pagecount();
         break;
       default:
         list = this.sweettypeservice.setsweetType('all');
+        this.pagecount();
         break;
     }
     return list;
@@ -48,8 +49,30 @@ export class ProductSectionComponent implements OnInit {
     return this.selectedType === type;
   }
 
-  pagecount(){
-    console.log(this.listcount);
+  listcount = this.sweettypeservice.getsweetcount(); //計算類別甜點數量
+
+  pagecount() {
+    let pagelist = [];
+    let pagecount = this.sweettypeservice.getpagecount();
+
+    for (let i = 1; i < pagecount; i++) {
+      pagelist.push(i);
+    }
+    console.log("頁數測試：");
+    console.log(pagelist);
+    return pagelist;
+  }
+
+  pagecc = this.pagecount();
+
+  //側邊列計算甜點類別數量
+  count(type: string): number {
+    var cc = 0;
+    products.forEach(element => {
+      if (element.type == type)
+        cc++;
+    }, this)
+    return cc;
   }
 
   // ProductType = producttype;
@@ -104,14 +127,5 @@ export class ProductSectionComponent implements OnInit {
   //   return list;
   // }
 
-  allcount = products.length;
-
-  count(type: string): number {
-    var cc = 0;
-    products.forEach(element => {
-      if (element.type == type)
-        cc++;
-    }, this)
-    return cc;
-  }
+  // allcount = products.length;  
 }

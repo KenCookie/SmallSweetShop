@@ -9,6 +9,8 @@ export class SweetTypeService {
   constructor() { }
 
   private product = products;
+  private listcount = products.length;
+
 
   setsweetType(choisetype: string) {
     console.log("SET::");
@@ -17,11 +19,13 @@ export class SweetTypeService {
     if (choisetype == 'all') {
       this.product = products
       this.getsweetType();
+      this.listcount = this.product.length;
       return this.product;
     }
 
     else {
       this.product = products.filter(Type => Type.type == choisetype);
+      this.listcount = this.product.length;
       this.getsweetType();
       return this.product;
     }
@@ -35,11 +39,19 @@ export class SweetTypeService {
     return this.product;
   }
 
+  getsweetcount() {
+    return this.listcount;
+  }
+
+  getpagecount() {
+    return (this.listcount / 6) + 1;
+  }
+
   changepage(pagenumber: number) {
     let ll, pagecount = 6 * pagenumber;
 
     if (this.product.length > 6) {
-      ll = this.product.slice(pagecount-6, pagecount);
+      ll = this.product.slice(pagecount - 6, pagecount);
       console.log(ll);
     }
   }
